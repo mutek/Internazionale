@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
-
+#
+# mutek (2013)
+# 
+# <mutek@riseup.net>
+#
+# Indicizza in base al contenuto di incoming
+#
+#
 
 . ./genThumb.sh
 wait
@@ -8,6 +15,9 @@ mv incoming/*.png Covers/
 wait
 
 mv incoming/*.pdf PDF/
+wait
+
+mv incoming/*.mp3 AUDIO/
 wait
 
 mv model/body.html model/body.html.old
