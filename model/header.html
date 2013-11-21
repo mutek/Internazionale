@@ -17,7 +17,10 @@
 
 <body>
 	<script>
-	$('audio,video').mediaelementplayer();
+	jQuery(document).ready(function($) {
+			$('#version').html( mejs.version);
+			$('audio').mediaelementplayer({audioWidth: 380, success: function(me) {  $('#audio-type').html( me.pluginType); }});
+			});
 	</script>	
 	<div id="wrap">
 		<h1>Internazionale</h1>
