@@ -27,7 +27,7 @@ for file in $(ls PDF | cut -d"." -f 1 | sort -r)
 do
 
         echo $file
-echo "		        <li><a href=\"http://mutek.github.io/Internazionale/PDF/"$file".pdf\"><img src=\"http://mutek.github.io/Internazionale/Covers/"$file".pdf.png\" style=\"max-width: 307px;\" alt=\"Internazionale numero "$file"\" /><div><audio preload=\"none\" id=\"player2\" src=\"http://mutek.github.io/Internazionale/AUDIO/"$file".mp3\" type=\"audio/mp3\" controls=\"controls\"></audio></div>"$file".pdf</li>" >> model/body.html
+echo "		        <li><a href=\"http://mutek.github.io/Internazionale/PDF/"$file".pdf\"><img src=\"http://mutek.github.io/Internazionale/Covers/"$file".pdf.png\" style=\"max-width: 307px;\" alt=\"Internazionale numero "$file"\" /><div><audio preload=\"metadata\" id=\"player2\" src=\"http://mutek.github.io/Internazionale/AUDIO/"$file".mp3\" type=\"audio/mp3\" controls=\"controls\"></audio></div>"$file".pdf</li>" >> model/body.html
 wait
 
 done
