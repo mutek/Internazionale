@@ -10,16 +10,13 @@
 	<link rel="stylesheet" href="stylesheets/mejs-skins.css" />
 	<script src="javascripts/main.js"></script>
 	<script src="javascripts/jquery-1.9.1.min.js"></script>
-	<script src="javascripts/creaCanvas.js"></script>
 	<script src="javascripts/mediaelement-and-player.min.js"></script>	
-	
+	<script src="javascripts/creaCanvas.js"></script>	
 </head>
 
 <body>
 	<script>
-	jQuery(document).ready(function($) {
-			$('#version').html( mejs.version);
-			});
+		$('video,audio').mediaelementplayer({features: ['playpause','progress','duration','volume'] , alwaysShowControls: true, iPadUseNativeControls: true, iPhoneUseNativeControls: true, AndroidUseNativeControls: true});
 	</script>	
 	<div id="wrap">
 		<h1>Internazionale</h1>
